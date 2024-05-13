@@ -1,0 +1,17 @@
+package tech.picnic;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import tech.picnic.service.PickingService;
+
+@SpringBootTest
+class ApplicationIntegrationTests {
+
+  @Autowired PickingService pickingService;
+
+  @Test
+  void completesOrder() throws Exception {
+    pickingService.pick("1", 2);
+  }
+}
