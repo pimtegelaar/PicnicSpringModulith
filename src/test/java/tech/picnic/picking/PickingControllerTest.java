@@ -1,11 +1,11 @@
-package tech.picnic.service;
+package tech.picnic.picking;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class ReplenishmentServiceTest {
+class PickingControllerTest {
 
   @Test
-  void replenish() {}
+  void pick() {}
 }

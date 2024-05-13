@@ -1,10 +1,10 @@
-package tech.picnic.controller;
+package tech.picnic.replenishment;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class ReplenishmentControllerTest {
+class ReplenishmentServiceTest {
 
   @Test
   void replenish() {}

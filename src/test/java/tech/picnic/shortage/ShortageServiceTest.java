@@ -1,11 +1,11 @@
-package tech.picnic.service;
+package tech.picnic.shortage;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class PickingServiceTest {
+class ShortageServiceTest {
 
   @Test
-  void pick() {}
+  void notifyShortage() {}
 }

@@ -1,4 +1,4 @@
-package tech.picnic.repository;
+package tech.picnic.picking;
 
 import org.springframework.stereotype.Repository;
 

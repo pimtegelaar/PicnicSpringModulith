@@ -1,4 +1,4 @@
-package tech.picnic.repository;
+package tech.picnic.stock;
 
 import static org.junit.jupiter.api.Assertions.*;
 

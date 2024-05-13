@@ -1,11 +1,11 @@
-package tech.picnic.service;
+package tech.picnic.replenishment;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class ShortageServiceTest {
+class ReplenishmentControllerTest {
 
   @Test
-  void notifyShortage() {}
+  void replenish() {}
 }

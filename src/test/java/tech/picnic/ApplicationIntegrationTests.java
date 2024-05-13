@@ -3,7 +3,7 @@ package tech.picnic;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import tech.picnic.service.PickingService;
+import tech.picnic.picking.PickingService;
 
 @SpringBootTest
 class ApplicationIntegrationTests {

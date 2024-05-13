@@ -1,8 +1,7 @@
-package tech.picnic.service;
+package tech.picnic.stock;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import tech.picnic.repository.StockRepository;
 
 @AllArgsConstructor
 @Service
@@ -16,5 +15,9 @@ public class StockService  {
 
   public boolean reduceStock(String articleId, int amount) {
     return stockRepository.reduceStock(articleId, amount);
+  }
+
+  public void addStock(String articleId, int amount) {
+    stockRepository.addStock(articleId, amount);
   }
 }
