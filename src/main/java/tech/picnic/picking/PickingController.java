@@ -22,6 +22,6 @@ public class PickingController {
   @GetMapping("/trigger/{articleId}")
   public String triggerEvent(@PathVariable String articleId) {
     pickingService.triggerEvent(articleId);
-    return "Hello, World!";
+    return "Triggered shortage event for article " + articleId;
   }
 }
