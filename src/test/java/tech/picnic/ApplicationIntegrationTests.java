@@ -11,7 +11,7 @@ class ApplicationIntegrationTests {
   @Autowired PickingService pickingService;
 
   @Test
-  void completesOrder() throws Exception {
+  void completesOrder() {
     pickingService.pick("1", 2);
   }
 }
