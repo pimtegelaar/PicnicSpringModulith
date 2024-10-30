@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.modulith.test.ApplicationModuleTest;
 import org.springframework.modulith.test.Scenario;
-import tech.picnic.stock.StockRepository;
+import tech.picnic.stock.StockService;
 
 @ApplicationModuleTest(mode = ApplicationModuleTest.BootstrapMode.STANDALONE)
 @RequiredArgsConstructor
@@ -15,7 +15,7 @@ class PickingServiceIntegrationTest {
 
   @MockBean private final PickingRepository pickingRepository;
 
-  @MockBean private final StockRepository stockRepository;
+  @MockBean private final StockService stockService;
 
   @Test
   void publishesOrderCompletion(Scenario scenario) {
