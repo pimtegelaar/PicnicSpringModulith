@@ -7,5 +7,5 @@ import org.junit.jupiter.api.Test;
 class ShortageServiceTest {
 
   @Test
-  void notifyShortage() {}
+  void handleShortage() {}
 }

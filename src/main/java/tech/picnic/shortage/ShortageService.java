@@ -8,8 +8,8 @@ import tech.picnic.picking.ShortageEvent;
 public class ShortageService {
 
   @ApplicationModuleListener
-  public void notifyShortage(ShortageEvent event) throws InterruptedException {
-    System.out.println("Notifying shortage of article " + event.articleId());
+  public void handleShortage(ShortageEvent event) throws InterruptedException {
+    System.out.println("Received shortage of article " + event.articleId());
     Thread.sleep(1000);
     System.out.println("Handled shortage of article " + event.articleId());
   }
