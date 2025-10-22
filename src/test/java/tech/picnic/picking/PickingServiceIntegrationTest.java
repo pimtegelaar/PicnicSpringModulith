@@ -2,9 +2,9 @@ package tech.picnic.picking;
 
 import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.modulith.test.ApplicationModuleTest;
 import org.springframework.modulith.test.Scenario;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import tech.picnic.stock.StockService;
 
 @ApplicationModuleTest(mode = ApplicationModuleTest.BootstrapMode.STANDALONE)
@@ -13,9 +13,10 @@ class PickingServiceIntegrationTest {
 
   private final PickingService pickingService;
 
-  @MockBean private final PickingRepository pickingRepository;
+  @MockitoBean
+  private final PickingRepository pickingRepository;
 
-  @MockBean private final StockService stockService;
+  @MockitoBean private final StockService stockService;
 
   @Test
   void publishesOrderCompletion(Scenario scenario) {
